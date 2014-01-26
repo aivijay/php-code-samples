@@ -52,7 +52,7 @@
           $port = "2002";
           break;
         case "production":
-          $host = "123.45.678.901";
+          $host = "192.168.1.3";
           $port = "2001";
           break;
       }
