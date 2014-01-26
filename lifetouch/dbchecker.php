@@ -28,7 +28,7 @@
       # DB arguments
       # defaults to (development environment)
       #
-      $host     = "123.45.678.903";
+      $host     = "192.168.1.1";
       $port     = "2003";
       $dbname   = "test";
       $username = "root";
@@ -48,7 +48,7 @@
       #
       switch ($env) {
         case "qa":
-          $host = "123.45.678.902";
+          $host = "192.168.1.2";
           $port = "2002";
           break;
         case "production":
@@ -98,10 +98,10 @@
     # Notify email
     #
     function notifyEmail() {
-      $email      = "vijaysam@mailworks.org";
+      $email      = "someemail@exampleemail.org";
       $name       = "DbChecker"; //senders name
-      $email      = "vijaysam@mailworks.org"; //senders e-mail adress
-      $recipient  = "aivijay@gmail.com"; //recipient
+      $email      = "someemail@exampleeamil.org"; //senders e-mail adress
+      $recipient  = "recipientemail@example2.com"; //recipient
       $mail_body  = "CRITICAL: Database connection issues"; //mail body
       $subject    = "CRITICAL: Database connection issues"; //subject
       $header     = "From: ". $name . " <" . $email . ">\r\n"; //optional headerfields
